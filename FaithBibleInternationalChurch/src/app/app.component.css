@@ -1,0 +1,19 @@
+.theme-red-background {
+    background-color: #f70000;
+}
+.theme-blue-background {
+    background-color: #001a45;
+}
+.theme-red-text {
+    color: #f70000;
+}
+.theme-blue-text {
+    color: #001a45;
+}
+.theme-white-text {
+    color: #fcfcfc;
+}
+.spacer{
+    height:70px;
+}
+

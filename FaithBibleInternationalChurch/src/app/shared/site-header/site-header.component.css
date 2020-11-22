@@ -1,0 +1,20 @@
+@import "../../app.component.css";
+
+.logo-height {
+    height: 200px;
+}
+
+.on-load {
+    position: absolute;
+    left: 39%;
+    font-size: xx-large;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+      background-color: lightblue;
+    }
+  }
+

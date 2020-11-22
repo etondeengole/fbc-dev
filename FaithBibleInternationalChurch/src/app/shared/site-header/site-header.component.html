@@ -1,0 +1,21 @@
+  <nav class="navbar navbar-expand-md sticky-top on-load" (scroll)="onWindowScroll($event);">    
+      <div class="collapse navbar-collapse container-fluid" id="navbarCollapse">
+        <ul class="nav navbar-nav navbar-right">  
+          <li class="nav-item"></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+              <a class="nav-link" routerLink="/Home" routerLinkActive="active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/stream" routerLinkActive="active" target="new">Watch Online</a>
+            </li>
+            <!--li class="nav-item">
+              <a class="nav-link" routerLink="/contact-list">Ministries</a>
+            </li-->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/events">Events</a>
+            </li>
+        </ul>
+      </div>
+  </nav>
