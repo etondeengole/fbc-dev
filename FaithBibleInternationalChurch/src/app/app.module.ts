@@ -10,6 +10,8 @@ import { EventsCalendarComponent } from './events-calendar/events-calendar.compo
 import { CountdownTimerComponent } from './shared/countdown-timer/countdown-timer.component';
 import { CountdownTimerModule } from 'angular-countdown-timer';
 import { WelcomePageModule } from './welcome-page/welcome-page.module';
+import { SiteFooterComponent } from './shared/site-footer/site-footer.component';
+import { ContactFormComponent } from './shared/contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { WelcomePageModule } from './welcome-page/welcome-page.module';
     SiteHeaderComponent,
     LiveStreamComponent,
     EventsCalendarComponent,
-    CountdownTimerComponent
+    CountdownTimerComponent,
+    SiteFooterComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
