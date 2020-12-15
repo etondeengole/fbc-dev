@@ -9,12 +9,12 @@ import { LiveStreamComponent } from './live-stream/live-stream.component';
 import { EventsCalendarComponent } from './events-calendar/events-calendar.component';
 import { CountdownTimerComponent } from './shared/countdown-timer/countdown-timer.component';
 import { CountdownTimerModule } from 'angular-countdown-timer';
+import { WelcomePageModule } from './welcome-page/welcome-page.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     SiteHeaderComponent,
-    WelcomePageComponent,
     LiveStreamComponent,
     EventsCalendarComponent,
     CountdownTimerComponent
@@ -23,7 +23,8 @@ import { CountdownTimerModule } from 'angular-countdown-timer';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CountdownTimerModule.forRoot()
+    CountdownTimerModule.forRoot(),
+    WelcomePageModule
   ],
   providers: [],
   bootstrap: [AppComponent]
