@@ -7,6 +7,8 @@ import { SiteHeaderComponent } from './shared/site-header/site-header.component'
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { LiveStreamComponent } from './live-stream/live-stream.component';
 import { EventsCalendarComponent } from './events-calendar/events-calendar.component';
+import { CountdownTimerComponent } from './shared/countdown-timer/countdown-timer.component';
+import { CountdownTimerModule } from 'angular-countdown-timer';
 
 @NgModule({
   declarations: [
@@ -14,12 +16,14 @@ import { EventsCalendarComponent } from './events-calendar/events-calendar.compo
     SiteHeaderComponent,
     WelcomePageComponent,
     LiveStreamComponent,
-    EventsCalendarComponent
+    EventsCalendarComponent,
+    CountdownTimerComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    CountdownTimerModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

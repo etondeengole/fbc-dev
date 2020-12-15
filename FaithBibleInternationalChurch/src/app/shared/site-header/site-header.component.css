@@ -1,20 +1,12 @@
-@import "../../app.component.css";
-
-.logo-height {
-    height: 200px;
+.bg-light{
+  background-color: rgba(0,0,0,.075)!important;
+  position: fixed;
+  width: 100%;
 }
 
-.on-load {
-    position: absolute;
-    left: 39%;
-    font-size: xx-large;
-    font-family: "Comic Sans MS", cursive, sans-serif;
-    color: white;
+.bg-dark {
+  background-color: #808080f6!important;
+  position: fixed;
+  width: 100%;
+  color: white;;
 }
-
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: lightblue;
-    }
-  }
-

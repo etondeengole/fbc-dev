@@ -19,7 +19,9 @@ onWindowScroll(e) {
     if (window.pageYOffset > element.clientHeight) {
       element.classList.add('bg-dark'); //add class on scroll
       element.classList.remove('on-load');
-    } else {
+    } 
+    else 
+    {
       element.classList.remove('bg-dark'); //when page is just loaded
       element.classList.add('on-load');
     }
