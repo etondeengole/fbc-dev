@@ -12,6 +12,7 @@ import { CountdownTimerModule } from 'angular-countdown-timer';
 import { WelcomePageModule } from './welcome-page/welcome-page.module';
 import { SiteFooterComponent } from './shared/site-footer/site-footer.component';
 import { ContactFormComponent } from './shared/contact-form/contact-form.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ContactFormComponent } from './shared/contact-form/contact-form.compone
     AppRoutingModule,
     BrowserAnimationsModule,
     CountdownTimerModule.forRoot(),
-    WelcomePageModule
+    WelcomePageModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

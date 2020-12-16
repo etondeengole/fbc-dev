@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { NgForm } from '@angular/forms';
+
 
 @Component({
   selector: 'app-contact-form',
@@ -6,10 +8,31 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact-form.component.css']
 })
 export class ContactFormComponent implements OnInit {
+  @ViewChild('f', { static: false }) contactForm: NgForm;
+  genders: string[] = ['male', 'female'];
+  contactInformation: any = {
+    FirstName: '',
+    LastName: '',
+    Email: '',
+    Subject: '',
+    Gender: '',
+    Message: ''
+  }
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  onSubmit(form: NgForm) {
+    console.log(this.contactForm);
+    this.contactInformation.FirstName = this.contactForm.value.name;
+    this.contactInformation.LastName = this.contactForm.value.surname;
+    this.contactInformation.Email = this.contactForm.value.email;
+    this.contactInformation.Subject = this.contactForm.value.subject;
+    this.contactInformation.Gender = this.contactForm.value.gender;
+    this.contactInformation.Message = this.contactForm.value.message;
+    this.contactForm.reset();    
   }
 
 }
