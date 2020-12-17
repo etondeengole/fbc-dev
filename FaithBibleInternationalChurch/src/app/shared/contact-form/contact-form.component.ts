@@ -24,7 +24,7 @@ export class ContactFormComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSubmit(form: NgForm) {
+  onSubmit() {
     console.log(this.contactForm);
     this.contactInformation.FirstName = this.contactForm.value.name;
     this.contactInformation.LastName = this.contactForm.value.surname;
