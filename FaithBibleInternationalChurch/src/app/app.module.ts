@@ -22,7 +22,7 @@ import { FormsModule } from '@angular/forms';
     EventsCalendarComponent,
     CountdownTimerComponent,
     SiteFooterComponent,
-    ContactFormComponent
+    ContactFormComponent    
   ],
   imports: [
     BrowserModule,
