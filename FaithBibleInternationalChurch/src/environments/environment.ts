@@ -4,7 +4,8 @@
 
 export const environment = {
   production: false,
-  FBCBaseApiUrl: "https://localhost:44311/"
+  FBCBaseApiUrl: "https://localhost:44311/",
+  APIKey: "ETNy6JJjSCHHhzT5zycNJD7NEH6enYtjJbkKSTzF"
 };
 
 /*

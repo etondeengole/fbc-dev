@@ -17,8 +17,8 @@ namespace FaithBibleInternationalChurchBackend.Controllers
         }
 
         [HttpPost]
-        [Route("SendEmail")]
-        public async Task<IActionResult> SendEmailAsync([FromBody] CommunicationRequest communicationRequest)
+        [Route("SendEmailContactForm")]
+        public async Task<IActionResult> SendEmailContactForm([FromBody] CommunicationRequest communicationRequest)
         {
             var response = await _communicationHandler.Handle(communicationRequest);
 

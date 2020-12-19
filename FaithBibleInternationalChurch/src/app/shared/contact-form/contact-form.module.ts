@@ -3,6 +3,9 @@ import { CommonModule } from '@angular/common';
 import { ContactFormComponent } from './contact-form.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import { SendEmailService } from './send-email-service.service';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
+import { HttpErrorInterceptor } from 'src/app/Models/HttpErrorInterceptor';
 
 
 
@@ -10,8 +13,19 @@ import { BrowserModule } from '@angular/platform-browser';
   declarations: [ContactFormComponent],
   imports: [
     FormsModule,
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  bootstrap: [ContactFormComponent]
+  bootstrap: [
+    ContactFormComponent
+  ],
+  providers: [
+    SendEmailService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: HttpErrorInterceptor,
+      multi: true
+    }
+  ]
 })
 export class ContactFormModule { }
