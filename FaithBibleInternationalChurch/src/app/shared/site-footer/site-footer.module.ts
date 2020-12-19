@@ -10,6 +10,8 @@ import { ContactFormModule } from '../contact-form/contact-form.module';
   imports: [
     CommonModule,
     ContactFormModule
-  ]
+  ],
+  bootstrap: [SiteFooterComponent],
+  exports: [SiteFooterComponent]
 })
 export class SiteFooterModule { }

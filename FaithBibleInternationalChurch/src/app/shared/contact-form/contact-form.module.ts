@@ -25,6 +25,7 @@ import { HttpErrorInterceptor } from 'src/app/Models/HttpErrorInterceptor';
       useClass: HttpErrorInterceptor,
       multi: true
     }
-  ]
+  ],
+  exports: [ContactFormComponent]
 })
 export class ContactFormModule { }
