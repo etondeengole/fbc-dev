@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { from, Observable, of } from 'rxjs';
 import { catchError } from 'rxjs/internal/operators';
 import { ContactForm } from 'src/app/Models/ContactForm';
-import { environment } from '../../../environments/environment';
+import { environment } from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({

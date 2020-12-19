@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { ContactForm } from 'src/app/Models/ContactForm';
-import { SendEmailService } from './send-email-service.service';
+import { SendEmailService } from 'src/app/Services/send-email-service.service';
 
 
 @Component({

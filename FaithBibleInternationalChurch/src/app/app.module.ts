@@ -8,25 +8,23 @@ import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { LiveStreamComponent } from './live-stream/live-stream.component';
 import { EventsCalendarComponent } from './events-calendar/events-calendar.component';
 import { WelcomePageModule } from './welcome-page/welcome-page.module';
-import { SiteFooterComponent } from './shared/site-footer/site-footer.component';
-import { ContactFormComponent } from './shared/contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
+import { SiteFooterModule } from './shared/site-footer/site-footer.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     SiteHeaderComponent,
     LiveStreamComponent,
-    EventsCalendarComponent,
-    SiteFooterComponent,
-    ContactFormComponent    
+    EventsCalendarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     WelcomePageModule,
-    FormsModule
+    FormsModule,
+    SiteFooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
