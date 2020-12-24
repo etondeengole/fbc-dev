@@ -1,9 +1,9 @@
-﻿using FaithBibleInternationalChurchBackend.Handlers;
-using FaithBibleInternationalChurchBackend.RequestObjects;
+﻿using API.Handler;
+using API.RequestObjects;
 using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 
-namespace FaithBibleInternationalChurchBackend.Controllers
+namespace API.Controllers
 {
     [Route("[controller]")]
     [ApiController]

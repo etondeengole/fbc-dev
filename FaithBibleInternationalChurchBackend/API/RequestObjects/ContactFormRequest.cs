@@ -1,6 +1,4 @@
-﻿using Newtonsoft.Json;
-
-namespace FaithBibleInternationalChurchBackend.RequestObjects
+﻿namespace API.RequestObjects
 {
     public class ContactFormRequest
     {

@@ -1,4 +1,4 @@
-﻿namespace FaithBibleInternationalChurchBackend.Services
+﻿namespace API.Options
 {
     public class SmtpOptions
     {

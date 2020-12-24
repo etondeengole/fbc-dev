@@ -1,11 +1,12 @@
-﻿using System;
+﻿using API.Options;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Mail;
 using System.Threading.Tasks;
 
-namespace FaithBibleInternationalChurchBackend.Services
+namespace API.Services
 {
     public class EmailService
     {
@@ -26,7 +27,7 @@ namespace FaithBibleInternationalChurchBackend.Services
                 UseDefaultCredentials = false,
                 Credentials = new NetworkCredential(smtp.Username, smtp.Password)
             };
-        
+
         }
 
         internal void Send(string to, string subject, string body)

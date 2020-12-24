@@ -1,10 +1,13 @@
-﻿using FaithBibleInternationalChurchBackend.RequestObjects;
-using FaithBibleInternationalChurchBackend.Services;
+﻿using API.Options;
+using API.RequestObjects;
+using API.Services;
 using Microsoft.Extensions.Options;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 
-namespace FaithBibleInternationalChurchBackend.Handlers
+namespace API.Handler
 {
     public class CommunicationHandler : HandlerBase<ContactFormRequest>
     {
