@@ -7,9 +7,9 @@ import { environment } from '../../environments/environment';
 
 const httpOptions = {
   headers: new HttpHeaders({
-    'Content-Type': 'application/json',
-    'Authorization': 'Bearer ' + environment.APIKey,
-    'Accept': 'application/json'
+    'content-type': 'application/json',
+    //'Authorization': 'Bearer ' + environment.APIKey,
+    'accept': 'application/json'
   })
 };
 
@@ -20,7 +20,7 @@ export class SendEmailService {
 
   constructor(private httpClient: HttpClient) { }
 
-  public SendContactForm(contactForm: ContactForm): any {
+  public SendContactForm(contactForm: ContactForm): Observable<any> {
     let url: string = environment.FBCBaseApiUrl + 'Communication/SendEmailContactForm';
 
     return this.httpClient.post(url, contactForm, httpOptions)

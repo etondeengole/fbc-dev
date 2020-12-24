@@ -30,9 +30,13 @@ export class ContactFormComponent implements OnInit {
     let response: any;
 
     this.emailService.SendContactForm(this.contactInformation)
-      .subscribe(resp => {
-        response = resp;
-      });
+      .subscribe(
+        result => {
+          if (result.successful) {
+            console.log(result)
+          }
+        }
+      );
 
     this.contactForm.reset();    
   }

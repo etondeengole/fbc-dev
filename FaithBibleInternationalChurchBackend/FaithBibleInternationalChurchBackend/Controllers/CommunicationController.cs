@@ -9,16 +9,16 @@ namespace FaithBibleInternationalChurchBackend.Controllers
     [ApiController]
     public class CommunicationController : ControllerBase
     {
-        private readonly IControllerHandlers<CommunicationRequest> _communicationHandler;
+        private readonly IControllerHandlers<ContactFormRequest> _communicationHandler;
 
-        public CommunicationController(IControllerHandlers<CommunicationRequest> communicationHandler)
+        public CommunicationController(IControllerHandlers<ContactFormRequest> communicationHandler)
         {
             _communicationHandler = communicationHandler;
         }
 
         [HttpPost]
         [Route("SendEmailContactForm")]
-        public async Task<IActionResult> SendEmailContactForm([FromBody] CommunicationRequest communicationRequest)
+        public async Task<IActionResult> SendEmailContactForm([FromBody] ContactFormRequest communicationRequest)
         {
             var response = await _communicationHandler.Handle(communicationRequest);
 
