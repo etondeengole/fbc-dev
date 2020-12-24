@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  FBCBaseApiUrl: "http://localhost:56592/",
+  APIKey: "ETNy6JJjSCHHhzT5zycNJD7NEH6enYtjJbkKSTzF"
 };
 
 /*

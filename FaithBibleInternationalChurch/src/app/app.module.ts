@@ -7,30 +7,24 @@ import { SiteHeaderComponent } from './shared/site-header/site-header.component'
 import { WelcomePageComponent } from './welcome-page/welcome-page.component';
 import { LiveStreamComponent } from './live-stream/live-stream.component';
 import { EventsCalendarComponent } from './events-calendar/events-calendar.component';
-import { CountdownTimerComponent } from './shared/countdown-timer/countdown-timer.component';
-import { CountdownTimerModule } from 'angular-countdown-timer';
 import { WelcomePageModule } from './welcome-page/welcome-page.module';
-import { SiteFooterComponent } from './shared/site-footer/site-footer.component';
-import { ContactFormComponent } from './shared/contact-form/contact-form.component';
 import { FormsModule } from '@angular/forms';
+import { SiteFooterModule } from './shared/site-footer/site-footer.module';
 
 @NgModule({
   declarations: [
     AppComponent,
     SiteHeaderComponent,
     LiveStreamComponent,
-    EventsCalendarComponent,
-    CountdownTimerComponent,
-    SiteFooterComponent,
-    ContactFormComponent
+    EventsCalendarComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    CountdownTimerModule.forRoot(),
     WelcomePageModule,
-    FormsModule
+    FormsModule,
+    SiteFooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
