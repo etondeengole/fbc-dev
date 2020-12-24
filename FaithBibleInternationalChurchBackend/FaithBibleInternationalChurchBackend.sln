@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaithBibleInternationalChurchBackend", "FaithBibleInternationalChurchBackend\FaithBibleInternationalChurchBackend.csproj", "{B4B67458-7A06-469F-9006-2DC0747A5C9C}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "API", "API\API.csproj", "{82A92699-9C18-4CD4-863E-84840FC2DFB4}"
 EndProject
 Global
@@ -13,10 +11,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B4B67458-7A06-469F-9006-2DC0747A5C9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B4B67458-7A06-469F-9006-2DC0747A5C9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B4B67458-7A06-469F-9006-2DC0747A5C9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B4B67458-7A06-469F-9006-2DC0747A5C9C}.Release|Any CPU.Build.0 = Release|Any CPU
 		{82A92699-9C18-4CD4-863E-84840FC2DFB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{82A92699-9C18-4CD4-863E-84840FC2DFB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82A92699-9C18-4CD4-863E-84840FC2DFB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
