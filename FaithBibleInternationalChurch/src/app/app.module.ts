@@ -10,6 +10,7 @@ import { EventsCalendarComponent } from './events-calendar/events-calendar.compo
 import { WelcomePageModule } from './welcome-page/welcome-page.module';
 import { FormsModule } from '@angular/forms';
 import { SiteFooterModule } from './shared/site-footer/site-footer.module';
+import { LiveStreamModule } from './live-stream/live-stream.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SiteFooterModule } from './shared/site-footer/site-footer.module';
     BrowserAnimationsModule,
     WelcomePageModule,
     FormsModule,
-    SiteFooterModule
+    SiteFooterModule,
+    LiveStreamModule
   ],
   providers: [],
   bootstrap: [AppComponent]
