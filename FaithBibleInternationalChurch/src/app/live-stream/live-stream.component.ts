@@ -8,19 +8,18 @@ import { EmbedVideoService } from 'ngx-embed-video';
   templateUrl: './live-stream.component.html',
   styleUrls: ['./live-stream.component.css']
 })
-export class LiveStreamComponent {
-  youtubeUrl = 'https://www.youtube.com/embed/Py2q1zabMu8';
-
-  
- 
-  youtubeId = 'Py2q1zabMu8';
-
+export class LiveStreamComponent implements OnInit {
+  youtubeUrl: string = 'https://www.youtube.com/embed/Py2q1zabMu8';
+  youtubeChannelId: string = "UCbTnAG-4nCDE7SnS-FcpblQ";
+  youtubeBaseUrl: string = "https://www.youtube.com/embed/live_stream?channel=";
   
   constructor(private embedService: EmbedVideoService) {
-    console.log(this.embedService.embed(this.youtubeUrl));
- 
-    console.log(this.embedService.embed_youtube(this.youtubeId));
+
    }
+  ngOnInit(): void {
+    this.youtubeBaseUrl = this.youtubeBaseUrl + this.youtubeChannelId;
+    console.log(this.youtubeBaseUrl);
+  }
 
   
 
