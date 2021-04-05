@@ -4,9 +4,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { SendEmailService } from '../../Services/send-email-service.service';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
-import { HttpErrorInterceptor } from 'src/app/Models/HttpErrorInterceptor';
-
-
+import { HttpErrorInterceptor } from '../../Models/HttpErrorInterceptor';
 
 @NgModule({
   declarations: [ContactFormComponent],
